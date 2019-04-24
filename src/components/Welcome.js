@@ -9,11 +9,11 @@ class Welcome extends Component {
         <header className="Welcome-header">
           <img src={logo} className="Welcome-logo" alt="logo" />
           <p>
-            Welcome to the React Playground.
+            Welcome to my React Playground
           </p>
           <a
             className="Welcome-link"
-            href="/list"
+            href="#/list"
             rel="noopener noreferrer"
           >
             Continue to list

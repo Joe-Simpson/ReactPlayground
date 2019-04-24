@@ -6,7 +6,7 @@ function ListItem(props) {
 	let status = props.completed ? 'List-complete' : 'List-in-progress';
 	status = props.error ? 'List-error' : status;
 	return (
-		<li><a href={props.link} className={status}>{props.title}</a></li>
+		<li><a href={'#' + props.link} className={status}>{props.title}</a></li>
 	);
 }
 

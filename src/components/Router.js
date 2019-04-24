@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Welcome from './Welcome';
 import List from './List';
 import RenderingElements from './RenderingElements';
@@ -19,7 +19,7 @@ import HooksState from './HooksState';
 
 const Router = (props) => {
   return (
-    <BrowserRouter>
+    <HashRouter basename={process.env.PUBLIC_URL + '/'} hasType="slash">
     	<Switch>
     		<Route exact path="/" component={Welcome} />
     		<Route exact path="/list" component={List} />
@@ -38,7 +38,7 @@ const Router = (props) => {
             <Route exact path="/tree_view" component={TreeView} />
             <Route exact path="/hooks_state" component={HooksState} />
     	</Switch>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
