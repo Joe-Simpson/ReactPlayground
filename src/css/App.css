@@ -1,0 +1,140 @@
+/* Welcome */
+.Welcome {
+  text-align: center;
+}
+
+.Welcome-logo {
+  animation: Welcome-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.Welcome-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Welcome-link {
+  color: #61dafb;
+}
+
+@keyframes Welcome-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* List */
+.List-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+.List-header {
+  color: white;
+}
+
+.List-body {
+  list-style-type:none;
+  padding:0;
+  text-align: center;
+}
+
+.List-error {
+  text-decoration: none;
+  color: #C77984FF;
+}
+
+.List-in-progress {
+  text-decoration: none;
+  color: #FDE301FF
+}
+
+.List-complete {
+  text-decoration: none;
+  color: #7FFF8EFF;
+}
+
+/* ReactScrollbar */
+.ReactScrollbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  background-color: #282c34;
+}
+
+.ReactScrollbar-basic {
+  display: flex;
+  border: 2px solid white;
+  color:#C3B0B3FF;
+  max-width: 25%;
+}
+
+/* ReactPose */
+.ReactPose-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  background-color: #282c34;
+}
+
+.ReactPoseBasic-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex:1;
+  background-color: pink;
+  min-height: 10em;
+  min-width: 10em;
+}
+
+.NumberScrollerInput {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  background-color: #282c34;
+  color: white;
+}
+
+.NumberScrollerInput > input {
+  width: 25%;
+}
+
+/* ReactHorizontalScrollMenu */
+.menu-item {
+  padding: 0 60px;
+  margin: 5px 10px;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+.menu-item-wrapper.active {
+  border: 1px blue solid;
+}
+.menu-item.active {
+  border: 1px green solid;
+}
+ 
+.scroll-menu-arrow {
+  padding: 20px;
+  cursor: pointer;
+}
