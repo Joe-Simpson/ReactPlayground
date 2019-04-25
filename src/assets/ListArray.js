@@ -78,9 +78,9 @@ const list = [
 		error: false
 	},
 	{
-		link: "/hooks_state",
+		link: "/hooks",
 		completed: false,
-		title: "Hooks - State",
+		title: "Hooks",
 		error: false
 	}
 ]

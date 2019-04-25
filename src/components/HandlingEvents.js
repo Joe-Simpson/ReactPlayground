@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ListLink from './ListLink';
 
 // Using state and binding the this.handleClick method
 class Toggle extends Component {
@@ -75,7 +76,7 @@ export default class HandlingEvents extends Component {
 				<br/><ActionButton />
 				<br/><LoggingButton />
 				<br/><a href="https://reactjs.org/docs/handling-events.html">Go to React docs</a>
-				<br/><a href="/list">Back to List</a>
+				<ListLink />
 			</React.Fragment>
 		);
 	}

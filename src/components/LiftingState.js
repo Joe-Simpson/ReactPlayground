@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ListLink from './ListLink';
 
 const scaleNames = {
 	c: 'Celcius',
@@ -110,7 +111,7 @@ export default class LiftingState extends Component {
 			<React.Fragment>
 				<Calculator />
 				<a href="https://reactjs.org/docs/lifting-state-up.html">Go to React docs</a>
-				<br/><a href="/list">Back to List</a>
+				<ListLink />
 			</React.Fragment>
 		);
 	}

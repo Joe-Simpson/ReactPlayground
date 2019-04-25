@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ListLink from './ListLink';
 
 // text input
 class NameForm extends Component {
@@ -218,7 +219,7 @@ export default class Forms extends Component {
 				<Reservation />
 				<hr/>
 				<a href="https://reactjs.org/docs/forms.html">Go to React docs</a>
-				<br/><a href="/list">Back to List</a>
+				<ListLink />
 			</React.Fragment>
 		);
 	}

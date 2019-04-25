@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ListLink from './ListLink';
 
 // We create two function components
 // 1.
@@ -143,7 +144,7 @@ export default class ConditionalRendering extends Component {
 				<br/><Mailbox unreadMessages={messages} />
 				<br/><Page />
 				<a href="https://reactjs.org/docs/conditional-rendering.html">Go to React docs</a>
-				<br/><a href="/list">Back to List</a>
+				<ListLink />
 			</React.Fragment>
 		);
 	}

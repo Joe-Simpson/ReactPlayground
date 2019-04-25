@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ListLink from './ListLink';
 
 export default class NumberScrollerInput extends Component {
 
@@ -17,6 +18,7 @@ export default class NumberScrollerInput extends Component {
 			<div className="NumberScrollerInput">
 				<h1>{this.state.input}</h1>
 				<input type="range" min="0" max="10" step="1" name="input" value={this.state.input} onChange={this.handleChange} />
+				<ListLink />
 			</div>
 		);
 	}

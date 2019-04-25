@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
+import ListLink from './ListLink';
  
 // list of items
 const list = [
@@ -83,6 +84,7 @@ class App extends Component {
           clickWhenDrag={true}
           // translate={50}
         />
+        <ListLink />
       </div>
     );
   }

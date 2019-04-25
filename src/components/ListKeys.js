@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ListLink from './ListLink';
 
 const numbers = [1, 2, 3, 4, 5, 6];
 
@@ -23,7 +24,7 @@ export default class ListKeys extends Component {
 			<React.Fragment>
 				<NumberList numbers={numbers}/>
 				<a href="https://reactjs.org/docs/lists-and-keys.html">Go to React docs</a>
-				<br/><a href="/list">Back to List</a>
+				<ListLink />
 			</React.Fragment>
 		);
 	}

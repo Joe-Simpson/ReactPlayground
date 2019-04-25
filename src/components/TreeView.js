@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Tree from './Tree';
+import ListLink from './ListLink';
 
 export default class TreeView extends Component {
 
@@ -67,7 +68,8 @@ export default class TreeView extends Component {
 		return (
 			<div>
 				<Tree onSelect={this.onSelect} data={data}/>
-				{ selectedFile && selectedFile.type === 'file' && selectedFile.content }	
+				{ selectedFile && selectedFile.type === 'file' && selectedFile.content }
+				<ListLink />
 			</div>
 			
 		);

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ListLink from './ListLink';
 
 function FormattedDate(props) {
 	return <h2>It is {props.date.toLocaleTimeString()}</h2>;
@@ -49,7 +50,7 @@ export default class ClassComponents extends Component {
 			<React.Fragment>
 				<Clock />
 				<a href="https://reactjs.org/docs/state-and-lifecycle.html">Got to React docs</a>
-				<br/><a href="/list">Back to List</a>
+				<ListLink />
 			</React.Fragment>
 		);
 	}
