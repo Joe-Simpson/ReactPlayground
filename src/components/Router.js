@@ -16,6 +16,7 @@ import NumberScrollInput from './NumberScrollerInput';
 import ReactHorizontalScrollInput from './ReactHorizontalScrollMenu';
 import TreeView from './TreeView';
 import Hooks from './hooks/Hooks';
+import RouterSubmenu from './RouterSubmenu';
 
 const Router = (props) => {
   return (
@@ -36,7 +37,8 @@ const Router = (props) => {
             <Route exact path="/number_scroll_input" component={NumberScrollInput} />
             <Route exact path="/react_horizontal_scroll_input" component={ReactHorizontalScrollInput} />
             <Route exact path="/tree_view" component={TreeView} />
-            <Route exact path="/hooks" component={Hooks} />
+            <Route path="/hooks" component={Hooks} />
+            <Route exact path="/router_submenu" component={RouterSubmenu} />
     	</Switch>
     </HashRouter>
   )

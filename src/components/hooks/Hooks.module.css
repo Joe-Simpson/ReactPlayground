@@ -1,0 +1,29 @@
+.container {
+}
+
+.header {
+	width: 100%;
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+.menu {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.list {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.listitem {
+	display: inline;
+}
+
+.body {
+	overflow-y: auto;
+}

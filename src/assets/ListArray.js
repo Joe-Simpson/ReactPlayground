@@ -82,6 +82,12 @@ const list = [
 		completed: false,
 		title: "Hooks",
 		error: false
+	},
+	{
+		link: "/router_submenu",
+		completed: false,
+		title: "Router Submenu",
+		error: false
 	}
 ]
 
